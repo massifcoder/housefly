@@ -21,9 +21,9 @@ import cv2
 #=========================Important Variables=================================================
 # ============================================================================================
 data = 'ilu'
-url = 'https://lastnet.massifcoder.repl.co'
-urt = 'https://api.telegram.org/bot5827443436:AAFXhzdVNf0KUcE1V_2P0TIrl_rd5MctzBI/'
-group_id = -1001833965260
+url = 'xxxxxxxxxxxxxxxxxxxxxxxxx'   // website or domain link
+urt = 'https://api.telegram.org/bot<bot_token>/'
+group_id = -<telegram group_id>
 web_seq = 0
 screen_seq = 0
 rec_seq = 0
